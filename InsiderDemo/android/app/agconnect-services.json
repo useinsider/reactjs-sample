@@ -1,0 +1,12 @@
+{
+	"client":{
+		"cp_id":"cp_id",
+		"product_id":"product_id",
+		"client_id":"client_id",
+		"client_secret":"client_secret",
+		"app_id":"102367275",
+		"package_name":"com.useinsider.InsiderDemo",
+		"api_key":"CV8GXHsN1+34/Cw/egP93F2GJF5BKAj+OKLCH6o57fD4r0+UiaB1LA2kF5UL5D2M8BaC/cCeNIgTVtKPUQ4RRdBj9AdA"
+	},
+	"configuration_version":"1.0"
+}
