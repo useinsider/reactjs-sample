@@ -30,6 +30,7 @@ import RNInsider from 'react-native-insider';
 import InsiderCallbackType from 'react-native-insider/src/InsiderCallbackType';
 import InsiderGender from 'react-native-insider/src/InsiderGender';
 import ContentOptimizerDataType from 'react-native-insider/src/ContentOptimizerDataType';
+import RNInsiderIdentifier from 'react-native-insider/src/InsiderIdentifier';
 
 class App extends React.Component {
   componentDidMount() {
@@ -75,6 +76,7 @@ class App extends React.Component {
     );
     RNInsider.registerWithQuietPermission(false);
     RNInsider.startTrackingGeofence();
+    RNInsider.enableIDFACollection(false);
   }
   render() {
     return (
@@ -147,17 +149,18 @@ function trigger() {
     .setLocationOptin(true)
     .setFacebookID('Facebook-ID')
     .setTwitterID('Twittter-ID')
-    .setLanguage('TR');
+    .setLanguage('TR')
+    .setLocale('tr_TR');
 
   // Setting User Identifiers.
-  currentUser
-    .setUserIdentifierWithEmail('mobile@useinsider.com')
-    .setUserIdentifierWithUserID('CRM-ID')
-    .setUserIdentifierWithPhoneNumber('0000');
+  let identifiers = new RNInsiderIdentifier();
+  identifiers.addEmail('mobile@useinsider.com');
+  identifiers.addPhoneNumber('+901234567');
+  identifiers.addUserID('CRM-ID');
 
   // Login and Logout
-  currentUser.login();
   currentUser.logout();
+  currentUser.login(identifiers);
 
   // Setting custom attributes.
   // MARK: Your attribute key should be all lowercased and should not include any special or non Latin characters or any space, otherwise this attribute will be ignored. You can use underscore _.
@@ -205,10 +208,11 @@ function trigger() {
 
   // MARK: If any parameter which is passed to this method is nil / null or an empty string, it will return an empty and invalid Insider Product Object. Note that an invalid Insider Product object will be ignored for any product related operations.
   // You can crete Insider Product and add attributes later on it.
+  const taxonomy = ['taxonomy1', 'taxonomy2', 'taxonomy3'];
   let insiderExampleProduct = RNInsider.createNewProduct(
     'productID',
     'productName',
-    'taxonomy',
+    taxonomy,
     'imageURL',
     1000.5,
     'currency',
@@ -223,7 +227,6 @@ function trigger() {
     .setPromotionDiscount(10.5)
     .setSize('size')
     .setSalePrice(10.5)
-    .setSubCategory('subCategory')
     .setShippingCost(10.5)
     .setQuantity(10)
     .setStock(10);
@@ -268,7 +271,7 @@ function trigger() {
   RNInsider.getSmartRecommendationWithProduct(
     insiderExampleProduct,
     1,
-    'tr:TR',
+    'tr_TR',
     recommendation => {
       // Handle here
       console.log(
@@ -285,7 +288,7 @@ function trigger() {
   // --- PAGE VISITING --- //
 
   RNInsider.visitHomePage();
-  RNInsider.visitListingPage('taxonomy');
+  RNInsider.visitListingPage(taxonomy);
 
   const insiderExampleProducts = [insiderExampleProduct, insiderExampleProduct];
   RNInsider.visitCartPage(insiderExampleProducts);
