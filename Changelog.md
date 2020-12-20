@@ -70,7 +70,7 @@ Google policy update adaptation.
     classpath 'com.android.tools.build:gradle:3.6.1'
 ```
 
-- Huawei dependency versions has been updated in build.gradle. You need to update in your module level build.gradle.
+- Huawei dependency versions has been updated in build.gradle.
 
 ```rb
     implementation 'com.huawei.hms:push:5.0.4.302'
