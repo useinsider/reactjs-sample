@@ -35,8 +35,8 @@ import RNInsiderIdentifier from 'react-native-insider/src/InsiderIdentifier';
 class App extends React.Component {
   componentDidMount() {
     RNInsider.init(
-      'your_partner_name',
-      'group.com.useinsider.InsiderDemo',
+      'modoaruat',
+      'group.com.playdigital.modo.qa',
       (type, data) => {
         switch (type) {
           case InsiderCallbackType.NOTIFICATION_OPEN:
