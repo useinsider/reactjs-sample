@@ -37,8 +37,8 @@ allprojects {
         maven {
             url "https://artifactory.corp.vusecurity.com/artifactory/libs-release-local"
             credentials {
-                username=""
-                password=""
+                username="modo"
+                password="JVjC794kx45HTZeu"
             }
 
         }
