@@ -130,7 +130,7 @@ android {
 
     defaultConfig {
         // TODO: Please change with your partner name.
-        manifestPlaceholders = [ partner: "orkunbites" ]
+        manifestPlaceholders = [ partner: "your_partner_name" ]
         // TODO: Please change with your application ID as it is in google-service.json.
         applicationId "com.insiderdemo"
         minSdkVersion rootProject.ext.minSdkVersion

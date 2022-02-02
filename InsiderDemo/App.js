@@ -37,7 +37,7 @@ class App extends React.Component {
   componentDidMount() {
     RNInsider.init(
       'orkunbites',
-      'group.com.useinsider.mobile-ios',
+      'group.com.insiderdemo',
       (type, data) => {
         switch (type) {
           case InsiderCallbackType.NOTIFICATION_OPEN:
