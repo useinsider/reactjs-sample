@@ -31,12 +31,13 @@ import InsiderCallbackType from 'react-native-insider/src/InsiderCallbackType';
 import InsiderGender from 'react-native-insider/src/InsiderGender';
 import ContentOptimizerDataType from 'react-native-insider/src/ContentOptimizerDataType';
 import RNInsiderIdentifier from 'react-native-insider/src/InsiderIdentifier';
+import "react-native-keychain";
 
 class App extends React.Component {
   componentDidMount() {
     RNInsider.init(
-      'your_partner_name',
-      'group.com.useinsider.InsiderDemo',
+      'orkunbites',
+      'group.com.useinsider.mobile-ios',
       (type, data) => {
         switch (type) {
           case InsiderCallbackType.NOTIFICATION_OPEN:

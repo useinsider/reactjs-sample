@@ -130,13 +130,14 @@ android {
 
     defaultConfig {
         // TODO: Please change with your partner name.
-        manifestPlaceholders = [partner:"your_partner_name"]
+        manifestPlaceholders = [ partner: "orkunbites" ]
         // TODO: Please change with your application ID as it is in google-service.json.
-        applicationId "com.useinsider.InsiderDemo"
+        applicationId "com.insiderdemo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
     }
     splits {
         abi {
@@ -192,6 +193,7 @@ android {
 
 dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.android.support:multidex:2.0.1'
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
 
