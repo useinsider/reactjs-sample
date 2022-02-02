@@ -36,7 +36,7 @@ import "react-native-keychain";
 class App extends React.Component {
   componentDidMount() {
     RNInsider.init(
-      'orkunbites',
+      'your_partner_name',
       'group.com.insiderdemo',
       (type, data) => {
         switch (type) {
