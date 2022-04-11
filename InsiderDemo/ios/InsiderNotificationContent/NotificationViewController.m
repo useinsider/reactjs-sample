@@ -7,7 +7,7 @@
 
 #import "NotificationViewController.h"
 #import <UserNotificationsUI/UserNotificationsUI.h>
-#import "iCarousel.h"
+#import <InsiderMobileAdvancedNotification/iCarousel.h>
 #import <InsiderMobileAdvancedNotification/InsiderPushNotification.h>
 
 @interface NotificationViewController () <UNNotificationContentExtension, iCarouselDelegate, iCarouselDataSource>
