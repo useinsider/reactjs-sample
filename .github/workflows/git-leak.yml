@@ -1,0 +1,12 @@
+name: gitleaks
+on: [push]
+
+jobs:
+  gitleaks:
+    runs-on: self-hosted
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: '2'
+    - name: gitleaks-action
+      uses: zricethezav/gitleaks-action@master
