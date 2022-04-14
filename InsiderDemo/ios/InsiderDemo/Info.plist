@@ -51,13 +51,13 @@
 		</dict>
 	</dict>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Your 'Location Always and When In Use Usage Description' goes here.</string>
+	<string>Your &apos;Location Always and When In Use Usage Description&apos; goes here.</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Your 'Location Always Usage Description' goes here.</string>
+	<string>Your &apos;Location Always Usage Description&apos; goes here.</string>
 	<key>NSLocationUsageDescription</key>
-	<string>Your 'Location Usage Description' goes here.</string>
+	<string>Your &apos;Location Usage Description&apos; goes here.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Your 'Location When In Use Usage Description' goes here.</string>
+	<string>Your &apos;Location When In Use Usage Description&apos; goes here.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>fetch</string>

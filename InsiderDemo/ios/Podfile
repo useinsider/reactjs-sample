@@ -1,12 +1,36 @@
-platform :ios, '10.0'
+platform :ios, '11.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 use_frameworks!
+post_install do |installer|
+    ## Fix for XCode 12.5
+    find_and_replace("../node_modules/react-native/React/CxxBridge/RCTCxxBridge.mm",
+    "_initializeModules:(NSArray<id<RCTBridgeModule>> *)modules", "_initializeModules:(NSArray<Class> *)modules")
+    find_and_replace("../node_modules/react-native/ReactCommon/turbomodule/core/platform/ios/RCTTurboModuleManager.mm",
+      "RCTBridgeModuleNameForClass(module))", "RCTBridgeModuleNameForClass([module class]))")
+
+      react_native_post_install(installer)
+  
+  installer.pods_project.targets.each do |target|
+    target.build_configurations.each do |config|
+      config.build_settings['BUILD_LIBRARY_FOR_DISTRIBUTION'] = 'YES'
+    end
+    
+    if (target.name&.eql?('FBReactNativeSpec'))
+      target.build_phases.each do |build_phase|
+        if (build_phase.respond_to?(:name) && build_phase.name.eql?('[CP-User] Generate Specs'))
+          target.build_phases.move(build_phase, 0)
+        end
+      end
+    end
+  end
+end
 
 target 'InsiderDemo' do
 
   # Pods for InsiderDemo
+  
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
-  pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
+  pod 'FBReactNativeSpec', :path => "../node_modules/react-native/React/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
   pod 'RCTTypeSafety', :path => "../node_modules/react-native/Libraries/TypeSafety"
   pod 'React', :path => '../node_modules/react-native/'
@@ -28,13 +52,16 @@ target 'InsiderDemo' do
   pod 'React-jsi', :path => '../node_modules/react-native/ReactCommon/jsi'
   pod 'React-jsiexecutor', :path => '../node_modules/react-native/ReactCommon/jsiexecutor'
   pod 'React-jsinspector', :path => '../node_modules/react-native/ReactCommon/jsinspector'
-  pod 'ReactCommon/callinvoker', :path => "../node_modules/react-native/ReactCommon"
+  pod 'React-callinvoker', :path => "../node_modules/react-native/ReactCommon/callinvoker"
   pod 'ReactCommon/turbomodule/core', :path => "../node_modules/react-native/ReactCommon"
-  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga', :modular_headers => true
+  pod 'Yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
 
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
-  pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'RCT-Folly', :podspec => '../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec'
+
+  pod 'React-perflogger', :path => '../node_modules/react-native/ReactCommon/reactperflogger'
+  pod 'React-runtimeexecutor', :path => '../node_modules/react-native/ReactCommon/runtimeexecutor'
 
   use_native_modules!
   inherit! :search_paths
@@ -42,26 +69,14 @@ end
 
 target 'InsiderNotificationContent' do
   inherit! :search_paths
-  
-
   # Pods for InsiderNotificationContent
   pod "InsiderMobileAdvancedNotification"
 end
 
 target 'InsiderNotificationService' do
   inherit! :search_paths
-  
-
   # Pods for InsiderNotificationService
   pod "InsiderMobileAdvancedNotification"
-end
-
-post_install do |installer|
-    ## Fix for XCode 12.5 beta
-    find_and_replace("../node_modules/react-native/React/CxxBridge/RCTCxxBridge.mm",
-    "_initializeModules:(NSArray<id<RCTBridgeModule>> *)modules", "_initializeModules:(NSArray<Class> *)modules")
-    find_and_replace("../node_modules/react-native/ReactCommon/turbomodule/core/platform/ios/RCTTurboModuleManager.mm",
-    "RCTBridgeModuleNameForClass(strongModule));", "RCTBridgeModuleNameForClass([strongModule class]));")
 end
 
 def find_and_replace(dir, findstr, replacestr)

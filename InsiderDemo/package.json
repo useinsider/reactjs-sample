@@ -10,10 +10,12 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "openssl": "^1.1.0",
-    "react": "16.11.0",
-    "react-native": "0.62.1",
-    "react-native-insider": "^4.4.1"
+    "@notifee/react-native": "^5.1.0",
+    "@react-native-firebase/app": "^14.7.0",
+    "@react-native-firebase/messaging": "^14.7.0",
+    "react": "17.0.1",
+    "react-native": "0.64.2",
+    "react-native-insider": "^5.0.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
