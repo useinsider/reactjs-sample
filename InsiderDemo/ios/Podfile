@@ -1,6 +1,24 @@
 platform :ios, '11.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 use_frameworks!
+
+## Below lines for static library issue 
+## https://academy.useinsider.com/docs/how-can-i-use-insider-podfile-with-a-static-library-on-the-ios-platform
+dynamic_frameworks = ['InsiderMobile', 'InsiderMobileAdvancedNotification']
+pre_install do |installer|
+  installer.pod_targets.each do |pod|
+    if !dynamic_frameworks.include?(pod.name)
+      puts "Overriding the static_framework? method for #(pod.name)"
+      def pod.static_framework?
+        true
+      end
+      def pod.build_type;
+        Pod::BuildType.static_library
+      end
+    end
+  end
+end
+
 post_install do |installer|
     ## Fix for XCode 12.5
     find_and_replace("../node_modules/react-native/React/CxxBridge/RCTCxxBridge.mm",
@@ -67,15 +85,15 @@ target 'InsiderDemo' do
   inherit! :search_paths
 end
 
+# Pods for InsiderNotificationContent
 target 'InsiderNotificationContent' do
   inherit! :search_paths
-  # Pods for InsiderNotificationContent
   pod "InsiderMobileAdvancedNotification"
 end
 
+# Pods for InsiderNotificationService
 target 'InsiderNotificationService' do
   inherit! :search_paths
-  # Pods for InsiderNotificationService
   pod "InsiderMobileAdvancedNotification"
 end
 
