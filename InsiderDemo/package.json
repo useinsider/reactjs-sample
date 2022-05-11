@@ -15,7 +15,7 @@
     "@react-native-firebase/messaging": "^14.7.0",
     "react": "17.0.1",
     "react-native": "0.64.2",
-    "react-native-insider": "^5.0.1"
+    "react-native-insider": "^5.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
