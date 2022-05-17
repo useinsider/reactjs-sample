@@ -9,65 +9,10 @@ PODS:
     - React-Core (= 0.64.2)
     - React-jsi (= 0.64.2)
     - ReactCommon/turbomodule/core (= 0.64.2)
-  - Firebase/CoreOnly (8.14.0):
-    - FirebaseCore (= 8.14.0)
-  - Firebase/Messaging (8.14.0):
-    - Firebase/CoreOnly
-    - FirebaseMessaging (~> 8.14.0)
-  - FirebaseCore (8.14.0):
-    - FirebaseCoreDiagnostics (~> 8.0)
-    - GoogleUtilities/Environment (~> 7.7)
-    - GoogleUtilities/Logger (~> 7.7)
-  - FirebaseCoreDiagnostics (8.15.0):
-    - GoogleDataTransport (~> 9.1)
-    - GoogleUtilities/Environment (~> 7.7)
-    - GoogleUtilities/Logger (~> 7.7)
-    - nanopb (~> 2.30908.0)
-  - FirebaseInstallations (8.15.0):
-    - FirebaseCore (~> 8.0)
-    - GoogleUtilities/Environment (~> 7.7)
-    - GoogleUtilities/UserDefaults (~> 7.7)
-    - PromisesObjC (< 3.0, >= 1.2)
-  - FirebaseMessaging (8.14.0):
-    - FirebaseCore (~> 8.0)
-    - FirebaseInstallations (~> 8.0)
-    - GoogleDataTransport (~> 9.1)
-    - GoogleUtilities/AppDelegateSwizzler (~> 7.7)
-    - GoogleUtilities/Environment (~> 7.7)
-    - GoogleUtilities/Reachability (~> 7.7)
-    - GoogleUtilities/UserDefaults (~> 7.7)
-    - nanopb (~> 2.30908.0)
   - glog (0.3.5)
-  - GoogleDataTransport (9.1.4):
-    - GoogleUtilities/Environment (~> 7.7)
-    - nanopb (< 2.30910.0, >= 2.30908.0)
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/AppDelegateSwizzler (7.7.0):
-    - GoogleUtilities/Environment
-    - GoogleUtilities/Logger
-    - GoogleUtilities/Network
-  - GoogleUtilities/Environment (7.7.0):
-    - PromisesObjC (< 3.0, >= 1.2)
-  - GoogleUtilities/Logger (7.7.0):
-    - GoogleUtilities/Environment
-  - GoogleUtilities/Network (7.7.0):
-    - GoogleUtilities/Logger
-    - "GoogleUtilities/NSData+zlib"
-    - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (7.7.0)"
-  - GoogleUtilities/Reachability (7.7.0):
-    - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (7.7.0):
-    - GoogleUtilities/Logger
   - InsiderHybrid (1.1.2)
   - InsiderMobile (12.1.0)
   - InsiderMobileAdvancedNotification (1.1.0)
-  - nanopb (2.30908.0):
-    - nanopb/decode (= 2.30908.0)
-    - nanopb/encode (= 2.30908.0)
-  - nanopb/decode (2.30908.0)
-  - nanopb/encode (2.30908.0)
-  - PromisesObjC (2.1.0)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
     - DoubleConversion
@@ -325,22 +270,10 @@ PODS:
     - React-cxxreact (= 0.64.2)
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
-  - RNFBApp (14.7.0):
-    - Firebase/CoreOnly (= 8.14.0)
-    - React-Core
-  - RNFBMessaging (14.7.0):
-    - Firebase/Messaging (= 8.14.0)
-    - React-Core
-    - RNFBApp
   - RNInsider (5.0.2):
     - InsiderHybrid (= 1.1.2)
     - InsiderMobile (= 12.1.0)
     - React
-  - RNNotifee (5.1.0):
-    - React-Core
-    - RNNotifee/NotifeeCore (= 5.1.0)
-  - RNNotifee/NotifeeCore (5.1.0):
-    - React-Core
   - Yoga (1.14.0)
 
 DEPENDENCIES:
@@ -374,27 +307,15 @@ DEPENDENCIES:
   - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
   - React-runtimeexecutor (from `../node_modules/react-native/ReactCommon/runtimeexecutor`)
   - ReactCommon/turbomodule/core (from `../node_modules/react-native/ReactCommon`)
-  - "RNFBApp (from `../node_modules/@react-native-firebase/app`)"
-  - "RNFBMessaging (from `../node_modules/@react-native-firebase/messaging`)"
   - RNInsider (from `../node_modules/react-native-insider`)
-  - "RNNotifee (from `../node_modules/@notifee/react-native`)"
   - Yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   trunk:
     - boost-for-react-native
-    - Firebase
-    - FirebaseCore
-    - FirebaseCoreDiagnostics
-    - FirebaseInstallations
-    - FirebaseMessaging
-    - GoogleDataTransport
-    - GoogleUtilities
     - InsiderHybrid
     - InsiderMobile
     - InsiderMobileAdvancedNotification
-    - nanopb
-    - PromisesObjC
 
 EXTERNAL SOURCES:
   DoubleConversion:
@@ -451,14 +372,8 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/runtimeexecutor"
   ReactCommon:
     :path: "../node_modules/react-native/ReactCommon"
-  RNFBApp:
-    :path: "../node_modules/@react-native-firebase/app"
-  RNFBMessaging:
-    :path: "../node_modules/@react-native-firebase/messaging"
   RNInsider:
     :path: "../node_modules/react-native-insider"
-  RNNotifee:
-    :path: "../node_modules/@notifee/react-native"
   Yoga:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
@@ -467,19 +382,10 @@ SPEC CHECKSUMS:
   DoubleConversion: cf9b38bf0b2d048436d9a82ad2abe1404f11e7de
   FBLazyVector: e686045572151edef46010a6f819ade377dfeb4b
   FBReactNativeSpec: bc260fe3b9d23f43661ad1bce3fc2adb945d5c3a
-  Firebase: 7e8fe528c161b9271d365217a74c16aaf834578e
-  FirebaseCore: b84a44ee7ba999e0f9f76d198a9c7f60a797b848
-  FirebaseCoreDiagnostics: 92e07a649aeb66352b319d43bdd2ee3942af84cb
-  FirebaseInstallations: 40bd9054049b2eae9a2c38ef1c3dd213df3605cd
-  FirebaseMessaging: 5ebc42d281567658a2cb72b9ef3506e4a1a1a6e4
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
-  GoogleDataTransport: 5fffe35792f8b96ec8d6775f5eccd83c998d5a3b
-  GoogleUtilities: e0913149f6b0625b553d70dae12b49fc62914fd1
   InsiderHybrid: 64dfb4f033e344be9a42b7121c95983f37b12892
   InsiderMobile: b7f06e8d7ccfdd4c376f77129bafea20447ecb96
   InsiderMobileAdvancedNotification: 2692b90d0e3c0d8c085b6bc854a6f45103e3e3e1
-  nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
-  PromisesObjC: 99b6f43f9e1044bd87a95a60beff28c2c44ddb72
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 6d3e854f0e7260a648badd0d44fc364bc9da9728
   RCTTypeSafety: c1f31d19349c6b53085766359caac425926fafaa
@@ -503,12 +409,9 @@ SPEC CHECKSUMS:
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
-  RNFBApp: 097a31d372b3db15b41c7a1a5c429433b0609e12
-  RNFBMessaging: 06a7a73883f3f43da61507dbfcf4db2245c22869
   RNInsider: 27c15ddc9dd9929aad611cbae7d191bf76d3ae0e
-  RNNotifee: 6692f7bff575e9f25b5370a37530f5d5b3cb3a7b
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
 
-PODFILE CHECKSUM: b425d207eddb88427093dc6fa7a356a768722ab5
+PODFILE CHECKSUM: 990e9fc5bd597695de901223f89928db3d9a95cb
 
 COCOAPODS: 1.11.3

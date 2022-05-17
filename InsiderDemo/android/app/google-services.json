@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1093142704081",
+    "firebase_url": "https://comuseinsiderinsiderdemo.firebaseio.com",
+    "project_id": "comuseinsiderinsiderdemo",
+    "storage_bucket": "comuseinsiderinsiderdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1093142704081:android:9849b805817bda5a84faf0",
+        "android_client_info": {
+          "package_name": "com.useinsider.InsiderDemo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1093142704081-1p18g23e1jkinki9c8tc4gftcodpmn6a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBoxfv3ZQL-diC-dzKhNQLlu3nbBxGkFpo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1093142704081-1p18g23e1jkinki9c8tc4gftcodpmn6a.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "1093142704081-mng8puimr80e0dv10g2c1udsm8fsa46s.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.useinsider.InsiderDemo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

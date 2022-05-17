@@ -3,7 +3,6 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
-#import <Firebase.h>
 
 @implementation AppDelegate
 
@@ -11,8 +10,6 @@
 {
   // MARK: Please implement currentNotificationCenter.delegate.
   UNUserNotificationCenter.currentNotificationCenter.delegate = self;
-  
-  [FIRApp configure];
   
   RCTBridge *bridge = [[RCTBridge alloc] initWithDelegate:self launchOptions:launchOptions];
   RCTRootView *rootView = [[RCTRootView alloc] initWithBridge:bridge

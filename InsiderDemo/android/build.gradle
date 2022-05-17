@@ -35,11 +35,6 @@ allprojects {
             url("$rootDir/../node_modules/jsc-android/dist")
         }
 
-        maven {
-            // Notifee - third party push library - not necessary for the Insider integration
-            url "$rootDir/../node_modules/@notifee/react-native/android/libs"
-        }
-
         google()
         jcenter()
         mavenCentral()
