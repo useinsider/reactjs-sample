@@ -20,6 +20,6 @@ iOS:
 2. Repeat the first step for all targets(InsiderDemo, InsiderNotificationContent, NotificationService)
 3. Change bundle identifier with yours and select desired App Group
 4. Repeat the previous step for all targets(InsiderDemo, InsiderNotificationContent, NotificationService)
-5. Change the App Groups for [NotificationService.m](https://github.com/useinsider/reactjs-sample/blob/master/InsiderDemo/android/app/build.gradle#L137) and [NotificationViewController.m](https://github.com/useinsider/reactjs-sample/blob/master/InsiderDemo/ios/InsiderNotificationContent/NotificationViewController.m#L19) files
+5. Change the App Groups for [NotificationService.m](https://github.com/useinsider/reactjs-sample/blob/master/InsiderDemo/ios/InsiderNotificationService/NotificationService.m#L19) and [NotificationViewController.m](https://github.com/useinsider/reactjs-sample/blob/master/InsiderDemo/ios/InsiderNotificationContent/NotificationViewController.m#L19) files
 6. Change the App Group in the [App.js](https://github.com/useinsider/reactjs-sample/blob/master/InsiderDemo/App.js#L39) file
 7. Change the partner name for the URL Types, URL Schemes section(InsiderDemo) 
