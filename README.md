@@ -3,7 +3,7 @@ For more information about react native integration please check the [link](http
 
 Check the changelogs 👉 [here](https://academy.useinsider.com/docs/react-native-sdk-changelog)
 
-Before getting the build:
+## Before getting the build:
 
 Common:
 1. Change the partner name with yours in the App.js file(line 38)
