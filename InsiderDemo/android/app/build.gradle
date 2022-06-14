@@ -133,7 +133,6 @@ android {
         //  into the Insider panel. The left side of your mail address.
         manifestPlaceholders = [partner:"your_partner_name"]
         // TODO: Please change with your application ID as it is in google-service.json
-        //  and/or agconnect-services.json.
         applicationId "com.useinsider.InsiderDemo"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
@@ -233,4 +232,3 @@ apply from: file("../../node_modules/@react-native-community/cli-platform-androi
 
 //Required
 apply plugin: 'com.google.gms.google-services'
-apply plugin: 'com.huawei.agconnect'
