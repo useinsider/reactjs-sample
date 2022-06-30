@@ -1,12 +1,25 @@
 name: gitleaks
 on: [push]
+env:
+  GIT_DISCOVERY_ACROSS_FILESYSTEM: 1
 
 jobs:
   gitleaks:
-    runs-on: self-hosted
+    runs-on: self-runner-node
     steps:
-    - uses: actions/checkout@v2
+    - name: Checkout Repository
+      uses: actions/checkout@v2
       with:
         fetch-depth: '2'
+    - name: Clone GitLeak Action
+      uses: actions/checkout@v2
+      with:
+        repository: useinsider/gitleaks-action
+        ref: master
+        token: ${{ secrets.PAT }}
+        path: .github/actions/gitleaks-action
+    - name: Install Dependencies
+      run: npm install
+      working-directory: .github/actions/gitleaks-action
     - name: gitleaks-action
-      uses: zricethezav/gitleaks-action@master
+      uses:  ./.github/actions/gitleaks-action
