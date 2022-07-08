@@ -11,8 +11,8 @@ PODS:
     - ReactCommon/turbomodule/core (= 0.64.2)
   - glog (0.3.5)
   - InsiderHybrid (1.1.2)
-  - InsiderMobile (12.1.0)
-  - InsiderMobileAdvancedNotification (1.1.0)
+  - InsiderMobile (12.5.0)
+  - InsiderMobileAdvancedNotification (1.1.1)
   - RCT-Folly (2020.01.13.00):
     - boost-for-react-native
     - DoubleConversion
@@ -270,9 +270,9 @@ PODS:
     - React-cxxreact (= 0.64.2)
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
-  - RNInsider (5.0.2):
+  - RNInsider (5.2.0):
     - InsiderHybrid (= 1.1.2)
-    - InsiderMobile (= 12.1.0)
+    - InsiderMobile (= 12.5.0)
     - React
   - Yoga (1.14.0)
 
@@ -384,8 +384,8 @@ SPEC CHECKSUMS:
   FBReactNativeSpec: bc260fe3b9d23f43661ad1bce3fc2adb945d5c3a
   glog: 73c2498ac6884b13ede40eda8228cb1eee9d9d62
   InsiderHybrid: 64dfb4f033e344be9a42b7121c95983f37b12892
-  InsiderMobile: b7f06e8d7ccfdd4c376f77129bafea20447ecb96
-  InsiderMobileAdvancedNotification: 2692b90d0e3c0d8c085b6bc854a6f45103e3e3e1
+  InsiderMobile: 61aa03a6d1abb163f4327663fd524976d86d6eaa
+  InsiderMobileAdvancedNotification: cb6cc22b26898f226a57f9a7b64ae8766be817f7
   RCT-Folly: ec7a233ccc97cc556cf7237f0db1ff65b986f27c
   RCTRequired: 6d3e854f0e7260a648badd0d44fc364bc9da9728
   RCTTypeSafety: c1f31d19349c6b53085766359caac425926fafaa
@@ -409,7 +409,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
-  RNInsider: 27c15ddc9dd9929aad611cbae7d191bf76d3ae0e
+  RNInsider: 2753324022c8f19ac34ea3db92b9d7138f4a7ff7
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
 
 PODFILE CHECKSUM: 990e9fc5bd597695de901223f89928db3d9a95cb

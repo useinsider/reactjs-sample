@@ -5419,10 +5419,10 @@
     "jscodeshift" "^0.11.0"
     "nullthrows" "^1.1.1"
 
-"react-native-insider@^5.0.2":
-  "integrity" "sha512-pL+fONU4oLbj1YI9F3Dv5xBD8kumLz/Wau70t51XLAJHeQ48iLPUe6sc4UeyUzb/YnvvRj2OrntvyWguotQNLg=="
-  "resolved" "https://registry.npmjs.org/react-native-insider/-/react-native-insider-5.0.2.tgz"
-  "version" "5.0.2"
+"react-native-insider@^5.2.0":
+  "integrity" "sha512-OOA1h4uDc4wjRCXZvYXOMuxxW0VyW5/6BsMaPX8uVjuwgOsKGZTOhqrHovzn8/jslq3QNFHkoxOKlQj7j2fDbA=="
+  "resolved" "https://registry.npmjs.org/react-native-insider/-/react-native-insider-5.2.0.tgz"
+  "version" "5.2.0"
 
 "react-native@>=0.64.0-rc.0 || 0.0.0-*", "react-native@0.64.2":
   "integrity" "sha512-Ty/fFHld9DcYsFZujXYdeVjEhvSeQcwuTGXezyoOkxfiGEGrpL/uwUZvMzwShnU4zbbTKDu2PAm/uwuOittRGA=="

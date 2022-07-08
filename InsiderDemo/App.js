@@ -53,6 +53,7 @@
          }
        },
      );
+    RNInsider.setActiveForegroundPushView()
     RNInsider.registerWithQuietPermission(false);
     RNInsider.startTrackingGeofence();
     RNInsider.enableIDFACollection(false);
