@@ -1,5 +1,5 @@
 {
-  "name": "InsiderDemo",
+  "name": "insiderdemo",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,19 +10,19 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "react": "17.0.1",
-    "react-native": "0.64.2",
-    "react-native-insider": "^5.2.0"
+    "react": "17.0.2",
+    "react-native": "0.68.2",
+    "react-native-insider": "^5.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",
     "@babel/runtime": "^7.6.2",
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.5.1",
+    "eslint": "^7.32.0",
     "jest": "^24.9.0",
-    "metro-react-native-babel-preset": "^0.59.0",
-    "react-test-renderer": "16.11.0"
+    "metro-react-native-babel-preset": "^0.67.0",
+    "react-test-renderer": "17.0.2"
   },
   "jest": {
     "preset": "react-native"

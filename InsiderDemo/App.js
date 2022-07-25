@@ -53,8 +53,8 @@
          }
        },
      );
-    RNInsider.setActiveForegroundPushView()
     RNInsider.registerWithQuietPermission(false);
+    RNInsider.setActiveForegroundPushView();
     RNInsider.startTrackingGeofence();
     RNInsider.enableIDFACollection(false);
     RNInsider.enableIpCollection(false);
