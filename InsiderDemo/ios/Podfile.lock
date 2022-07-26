@@ -270,7 +270,7 @@ PODS:
     - React-cxxreact (= 0.64.2)
     - React-jsi (= 0.64.2)
     - React-perflogger (= 0.64.2)
-  - RNInsider (5.2.0):
+  - RNInsider (5.2.1):
     - InsiderHybrid (= 1.1.2)
     - InsiderMobile (= 12.5.0)
     - React
@@ -409,7 +409,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 24600e3b1aaa77126989bc58b6747509a1ba14f3
   React-runtimeexecutor: a9904c6d0218fb9f8b19d6dd88607225927668f9
   ReactCommon: 149906e01aa51142707a10665185db879898e966
-  RNInsider: 2753324022c8f19ac34ea3db92b9d7138f4a7ff7
+  RNInsider: c3088e415e59bc37586ec31bedee6c2f8d26ce24
   Yoga: 575c581c63e0d35c9a83f4b46d01d63abc1100ac
 
 PODFILE CHECKSUM: 990e9fc5bd597695de901223f89928db3d9a95cb

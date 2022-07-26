@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		036EC7EA17D75B461C48C0FD /* Pods_InsiderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD2C335282EA19C34B96826 /* Pods_InsiderDemo.framework */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		24FC3D8B627816D06EB488C6 /* Pods_InsiderNotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E697F902DDA9B55DE7B706C2 /* Pods_InsiderNotificationService.framework */; };
 		561EB83E243ADD9B0096F989 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 561EB83D243ADD9B0096F989 /* NotificationService.m */; };
 		561EB842243ADD9B0096F989 /* InsiderNotificationService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 561EB83A243ADD9B0096F989 /* InsiderNotificationService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		561EB84D243ADDAD0096F989 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 561EB84C243ADDAD0096F989 /* UserNotifications.framework */; };
@@ -18,9 +20,7 @@
 		561EB853243ADDAD0096F989 /* NotificationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 561EB852243ADDAD0096F989 /* NotificationViewController.m */; };
 		561EB856243ADDAD0096F989 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561EB854243ADDAD0096F989 /* MainInterface.storyboard */; };
 		561EB85A243ADDAD0096F989 /* InsiderNotificationContent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 561EB84B243ADDAD0096F989 /* InsiderNotificationContent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7D226B6219FC61669B987323 /* Pods_InsiderDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFA2A46FCEEE3E4893728B81 /* Pods_InsiderDemo.framework */; };
-		A8D23C9E929E07D16C76F943 /* Pods_InsiderNotificationContent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530357405FFEE4E8E434DD1D /* Pods_InsiderNotificationContent.framework */; };
-		B6CC600566E03EB282CFCECB /* Pods_InsiderNotificationService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93E3CC866AE9C3B1209CF31E /* Pods_InsiderNotificationService.framework */; };
+		85E8A44570275A0DBBDA5618 /* Pods_InsiderNotificationContent.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A176F605D471228F2150C20D /* Pods_InsiderNotificationContent.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +59,6 @@
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* InsiderDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InsiderDemoTests.m; sourceTree = "<group>"; };
-		0EFF206F4311762EF61EFF4E /* Pods-InsiderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderDemo.release.xcconfig"; path = "Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* InsiderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InsiderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = InsiderDemo/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = InsiderDemo/AppDelegate.m; sourceTree = "<group>"; };
@@ -67,10 +66,8 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = InsiderDemo/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = InsiderDemo/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = InsiderDemo/main.m; sourceTree = "<group>"; };
-		1E0FEADCBEBFD89A251FB50C /* Pods-InsiderNotificationContent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderNotificationContent.release.xcconfig"; path = "Target Support Files/Pods-InsiderNotificationContent/Pods-InsiderNotificationContent.release.xcconfig"; sourceTree = "<group>"; };
-		21DECE17751BDD412E2637E4 /* Pods-InsiderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderDemo.debug.xcconfig"; path = "Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		4B5B18094D2251D51FBD7C65 /* Pods-InsiderNotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderNotificationService.debug.xcconfig"; path = "Target Support Files/Pods-InsiderNotificationService/Pods-InsiderNotificationService.debug.xcconfig"; sourceTree = "<group>"; };
-		530357405FFEE4E8E434DD1D /* Pods_InsiderNotificationContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsiderNotificationContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B19F5927CD770E1ADF944EF /* Pods-InsiderNotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderNotificationService.release.xcconfig"; path = "Target Support Files/Pods-InsiderNotificationService/Pods-InsiderNotificationService.release.xcconfig"; sourceTree = "<group>"; };
+		531D753280A973B7BB775218 /* Pods-InsiderNotificationContent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderNotificationContent.debug.xcconfig"; path = "Target Support Files/Pods-InsiderNotificationContent/Pods-InsiderNotificationContent.debug.xcconfig"; sourceTree = "<group>"; };
 		561EB835243AD0180096F989 /* InsiderDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = InsiderDemo.entitlements; path = InsiderDemo/InsiderDemo.entitlements; sourceTree = "<group>"; };
 		561EB83A243ADD9B0096F989 /* InsiderNotificationService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = InsiderNotificationService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		561EB83C243ADD9B0096F989 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
@@ -85,12 +82,15 @@
 		561EB857243ADDAD0096F989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561EB85E243ADDC10096F989 /* InsiderNotificationService.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsiderNotificationService.entitlements; sourceTree = "<group>"; };
 		561EB85F243ADDD00096F989 /* InsiderNotificationContent.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = InsiderNotificationContent.entitlements; sourceTree = "<group>"; };
-		7139DACDAE23C3347052665A /* Pods-InsiderNotificationContent.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderNotificationContent.debug.xcconfig"; path = "Target Support Files/Pods-InsiderNotificationContent/Pods-InsiderNotificationContent.debug.xcconfig"; sourceTree = "<group>"; };
-		93E3CC866AE9C3B1209CF31E /* Pods_InsiderNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsiderNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFA2A46FCEEE3E4893728B81 /* Pods_InsiderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsiderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7176CFA5D6D6DD2B81DBBE15 /* Pods-InsiderNotificationContent.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderNotificationContent.release.xcconfig"; path = "Target Support Files/Pods-InsiderNotificationContent/Pods-InsiderNotificationContent.release.xcconfig"; sourceTree = "<group>"; };
+		843CF38B9C06E14E464D7B8B /* Pods-InsiderDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderDemo.debug.xcconfig"; path = "Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		8A0952ADB98499B45B37BD36 /* Pods-InsiderDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderDemo.release.xcconfig"; path = "Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo.release.xcconfig"; sourceTree = "<group>"; };
+		A176F605D471228F2150C20D /* Pods_InsiderNotificationContent.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsiderNotificationContent.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD2C335282EA19C34B96826 /* Pods_InsiderDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsiderDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0C4109A92D77053735506E /* Pods-InsiderNotificationService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderNotificationService.debug.xcconfig"; path = "Target Support Files/Pods-InsiderNotificationService/Pods-InsiderNotificationService.debug.xcconfig"; sourceTree = "<group>"; };
+		E697F902DDA9B55DE7B706C2 /* Pods_InsiderNotificationService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InsiderNotificationService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F0B12EC2493037775C729875 /* Pods-InsiderNotificationService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InsiderNotificationService.release.xcconfig"; path = "Target Support Files/Pods-InsiderNotificationService/Pods-InsiderNotificationService.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D226B6219FC61669B987323 /* Pods_InsiderDemo.framework in Frameworks */,
+				036EC7EA17D75B461C48C0FD /* Pods_InsiderDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6CC600566E03EB282CFCECB /* Pods_InsiderNotificationService.framework in Frameworks */,
+				24FC3D8B627816D06EB488C6 /* Pods_InsiderNotificationService.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +116,7 @@
 			files = (
 				561EB84F243ADDAD0096F989 /* UserNotificationsUI.framework in Frameworks */,
 				561EB84D243ADDAD0096F989 /* UserNotifications.framework in Frameworks */,
-				A8D23C9E929E07D16C76F943 /* Pods_InsiderNotificationContent.framework in Frameworks */,
+				85E8A44570275A0DBBDA5618 /* Pods_InsiderNotificationContent.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,9 +162,9 @@
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				561EB84C243ADDAD0096F989 /* UserNotifications.framework */,
 				561EB84E243ADDAD0096F989 /* UserNotificationsUI.framework */,
-				CFA2A46FCEEE3E4893728B81 /* Pods_InsiderDemo.framework */,
-				530357405FFEE4E8E434DD1D /* Pods_InsiderNotificationContent.framework */,
-				93E3CC866AE9C3B1209CF31E /* Pods_InsiderNotificationService.framework */,
+				ABD2C335282EA19C34B96826 /* Pods_InsiderDemo.framework */,
+				A176F605D471228F2150C20D /* Pods_InsiderNotificationContent.framework */,
+				E697F902DDA9B55DE7B706C2 /* Pods_InsiderNotificationService.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -229,12 +229,12 @@
 		EAFB480A657B2C27634BD552 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				21DECE17751BDD412E2637E4 /* Pods-InsiderDemo.debug.xcconfig */,
-				0EFF206F4311762EF61EFF4E /* Pods-InsiderDemo.release.xcconfig */,
-				7139DACDAE23C3347052665A /* Pods-InsiderNotificationContent.debug.xcconfig */,
-				1E0FEADCBEBFD89A251FB50C /* Pods-InsiderNotificationContent.release.xcconfig */,
-				4B5B18094D2251D51FBD7C65 /* Pods-InsiderNotificationService.debug.xcconfig */,
-				F0B12EC2493037775C729875 /* Pods-InsiderNotificationService.release.xcconfig */,
+				843CF38B9C06E14E464D7B8B /* Pods-InsiderDemo.debug.xcconfig */,
+				8A0952ADB98499B45B37BD36 /* Pods-InsiderDemo.release.xcconfig */,
+				531D753280A973B7BB775218 /* Pods-InsiderNotificationContent.debug.xcconfig */,
+				7176CFA5D6D6DD2B81DBBE15 /* Pods-InsiderNotificationContent.release.xcconfig */,
+				BA0C4109A92D77053735506E /* Pods-InsiderNotificationService.debug.xcconfig */,
+				4B19F5927CD770E1ADF944EF /* Pods-InsiderNotificationService.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "InsiderDemo" */;
 			buildPhases = (
-				BBB3ECB99FA473E54C937E18 /* [CP] Check Pods Manifest.lock */,
+				FAB8D3770FC57EE517F712C6 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
@@ -254,8 +254,8 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				561EB846243ADD9B0096F989 /* Embed App Extensions */,
 				56A632902462FAF4003FA92B /* ShellScript */,
-				2D2228169064B44BB5E1539D /* [CP] Embed Pods Frameworks */,
-				E4376DFFC354D9E8FCBE9E7E /* [CP] Copy Pods Resources */,
+				E8101554C6F3F6EE2CE17A12 /* [CP] Embed Pods Frameworks */,
+				72A3132E8C358AEEA8205B0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -272,11 +272,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 561EB843243ADD9B0096F989 /* Build configuration list for PBXNativeTarget "InsiderNotificationService" */;
 			buildPhases = (
-				770B87C2CFCC48C78C711BF1 /* [CP] Check Pods Manifest.lock */,
+				6615A35CE8B6F3830DDF7310 /* [CP] Check Pods Manifest.lock */,
 				561EB836243ADD9B0096F989 /* Sources */,
 				561EB837243ADD9B0096F989 /* Frameworks */,
 				561EB838243ADD9B0096F989 /* Resources */,
-				6C200F99F02226E2C263DDD5 /* [CP] Copy Pods Resources */,
+				8B28224711C8C724E44AD90A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -291,11 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 561EB85B243ADDAD0096F989 /* Build configuration list for PBXNativeTarget "InsiderNotificationContent" */;
 			buildPhases = (
-				B850DCCB1E9D64C8C4EB9B87 /* [CP] Check Pods Manifest.lock */,
+				4A4596DBEB51423DA608FEFD /* [CP] Check Pods Manifest.lock */,
 				561EB847243ADDAD0096F989 /* Sources */,
 				561EB848243ADDAD0096F989 /* Frameworks */,
 				561EB849243ADDAD0096F989 /* Resources */,
-				719CF0DE03661713D663EF88 /* [CP] Copy Pods Resources */,
+				ED599611782B0B521B335870 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -389,112 +389,7 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		2D2228169064B44BB5E1539D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo-frameworks.sh",
-				"${PODS_ROOT}/InsiderHybrid/InsiderHybrid.framework",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/InsiderMobile/InsiderMobile.framework/InsiderMobile",
-				"${PODS_XCFRAMEWORKS_BUILD_DIR}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.framework/InsiderMobileAdvancedNotification",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InsiderHybrid.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InsiderMobile.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InsiderMobileAdvancedNotification.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		56A632902462FAF4003FA92B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "TAGS=\"FIXME:\"\nERRORTAG=\"ERROR:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" | perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n\n";
-		};
-		6C200F99F02226E2C263DDD5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InsiderNotificationService/Pods-InsiderNotificationService-resources.sh",
-				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/InsiderInterface.storyboard",
-				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/NotificationService.m",
-				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/NotificationViewController.m",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InsiderInterface.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationService.m",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationViewController.m",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InsiderNotificationService/Pods-InsiderNotificationService-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		719CF0DE03661713D663EF88 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-InsiderNotificationContent/Pods-InsiderNotificationContent-resources.sh",
-				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/InsiderInterface.storyboard",
-				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/NotificationService.m",
-				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/NotificationViewController.m",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InsiderInterface.storyboardc",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationService.m",
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationViewController.m",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InsiderNotificationContent/Pods-InsiderNotificationContent-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		770B87C2CFCC48C78C711BF1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InsiderNotificationService-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B850DCCB1E9D64C8C4EB9B87 /* [CP] Check Pods Manifest.lock */ = {
+		4A4596DBEB51423DA608FEFD /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -516,7 +411,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BBB3ECB99FA473E54C937E18 /* [CP] Check Pods Manifest.lock */ = {
+		56A632902462FAF4003FA92B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TAGS=\"FIXME:\"\nERRORTAG=\"ERROR:\"\nfind \"${SRCROOT}\" \\( -name \"*.h\" -or -name \"*.m\" -or -name \"*.swift\" \\) -print0 | xargs -0 egrep --with-filename --line-number --only-matching \"($TAGS).*\\$|($ERRORTAG).*\\$\" | perl -p -e \"s/($TAGS)/ warning: \\$1/\" | perl -p -e \"s/($ERRORTAG)/ error: \\$1/\"\n\n";
+		};
+		6615A35CE8B6F3830DDF7310 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -531,14 +443,14 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-InsiderDemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-InsiderNotificationService-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E4376DFFC354D9E8FCBE9E7E /* [CP] Copy Pods Resources */ = {
+		72A3132E8C358AEEA8205B0D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -560,6 +472,94 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B28224711C8C724E44AD90A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InsiderNotificationService/Pods-InsiderNotificationService-resources.sh",
+				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/InsiderInterface.storyboard",
+				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/NotificationService.m",
+				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/NotificationViewController.m",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InsiderInterface.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationService.m",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationViewController.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InsiderNotificationService/Pods-InsiderNotificationService-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8101554C6F3F6EE2CE17A12 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo-frameworks.sh",
+				"${PODS_ROOT}/InsiderHybrid/InsiderHybrid.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/InsiderMobile/InsiderMobile.framework/InsiderMobile",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.framework/InsiderMobileAdvancedNotification",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InsiderHybrid.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InsiderMobile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/InsiderMobileAdvancedNotification.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InsiderDemo/Pods-InsiderDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED599611782B0B521B335870 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InsiderNotificationContent/Pods-InsiderNotificationContent-resources.sh",
+				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/InsiderInterface.storyboard",
+				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/NotificationService.m",
+				"${PODS_ROOT}/InsiderMobileAdvancedNotification/InsiderMobileAdvancedNotification.xcframework/NotificationViewController.m",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/InsiderInterface.storyboardc",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationService.m",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/NotificationViewController.m",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InsiderNotificationContent/Pods-InsiderNotificationContent-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAB8D3770FC57EE517F712C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InsiderDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -647,7 +647,7 @@
 /* Begin XCBuildConfiguration section */
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 21DECE17751BDD412E2637E4 /* Pods-InsiderDemo.debug.xcconfig */;
+			baseConfigurationReference = 843CF38B9C06E14E464D7B8B /* Pods-InsiderDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -674,7 +674,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0EFF206F4311762EF61EFF4E /* Pods-InsiderDemo.release.xcconfig */;
+			baseConfigurationReference = 8A0952ADB98499B45B37BD36 /* Pods-InsiderDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
@@ -696,7 +696,7 @@
 		};
 		561EB844243ADD9B0096F989 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B5B18094D2251D51FBD7C65 /* Pods-InsiderNotificationService.debug.xcconfig */;
+			baseConfigurationReference = BA0C4109A92D77053735506E /* Pods-InsiderNotificationService.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -726,7 +726,7 @@
 		};
 		561EB845243ADD9B0096F989 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F0B12EC2493037775C729875 /* Pods-InsiderNotificationService.release.xcconfig */;
+			baseConfigurationReference = 4B19F5927CD770E1ADF944EF /* Pods-InsiderNotificationService.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -756,7 +756,7 @@
 		};
 		561EB85C243ADDAD0096F989 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7139DACDAE23C3347052665A /* Pods-InsiderNotificationContent.debug.xcconfig */;
+			baseConfigurationReference = 531D753280A973B7BB775218 /* Pods-InsiderNotificationContent.debug.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -786,7 +786,7 @@
 		};
 		561EB85D243ADDAD0096F989 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E0FEADCBEBFD89A251FB50C /* Pods-InsiderNotificationContent.release.xcconfig */;
+			baseConfigurationReference = 7176CFA5D6D6DD2B81DBBE15 /* Pods-InsiderNotificationContent.release.xcconfig */;
 			buildSettings = {
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CLANG_ANALYZER_NONNULL = YES;
