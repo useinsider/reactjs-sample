@@ -247,8 +247,9 @@ function trigger() {
  
    // --- MESSAGE CENTER --- //
  
-   const startDate = new Date(Date.now() + 86400000);
-   const endDate = new Date(Date.now() - 86400000);
+   // You can able to see push campaigns in the last 90 days
+   const startDate = new Date(Date.now() - 86400000);
+   const endDate = new Date(Date.now() + 86400000);
  
    RNInsider.getMessageCenterData(100, startDate, endDate, messageCenterData => {
      // Handle here
