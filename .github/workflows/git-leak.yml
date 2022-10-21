@@ -23,3 +23,16 @@ jobs:
       working-directory: .github/actions/gitleaks-action
     - name: gitleaks-action
       uses:  ./.github/actions/gitleaks-action
+    - name: Send to Lambda
+      if: ${{ always() }}
+      run: |
+        python -c '
+        import json,sys,requests;
+        output=open("./results.sarif");
+        json_result=json.loads(output.read());
+        response="";
+        github_result = {"repository": "'${{ github.repository }}'", "server_url": "'${{ github.server_url }}'", "run_id": "'${{ github.run_id }}'"};
+        request = {"gitleaks_result": json_result, "github": github_result};
+        requests.post("'$LambdaWebHook'", json=request);'
+      env:
+        LambdaWebHook: ${{ secrets.CHECKMARX_LAMBDA_WEBHOOK }}
