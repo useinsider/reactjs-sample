@@ -14,7 +14,9 @@
       android:label="@string/app_name"
       android:icon="@mipmap/ins_logo"
       android:roundIcon="@mipmap/ins_logo"
-      android:theme="@style/AppTheme">
+      android:theme="@style/AppTheme"
+      android:allowBackup="false"
+      android:allowClearUserData="false">
       <activity
         android:name=".MainActivity"
         android:label="@string/app_name"
