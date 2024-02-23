@@ -4,7 +4,8 @@ use_frameworks!
 
 ## Below lines for static library issue 
 ## https://academy.useinsider.com/docs/how-can-i-use-insider-podfile-with-a-static-library-on-the-ios-platform
-dynamic_frameworks = ['InsiderMobile', 'InsiderMobileAdvancedNotification']
+
+dynamic_frameworks = ['InsiderMobile', 'InsiderMobileAdvancedNotification', 'InsiderGeofence', 'InsiderHybrid']
 pre_install do |installer|
   installer.pod_targets.each do |pod|
     if !dynamic_frameworks.include?(pod.name)
